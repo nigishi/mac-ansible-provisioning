@@ -3,16 +3,15 @@
   hosts: 127.0.0.1
   connection: local
   vars:
-    brew_taps:
-      - homebrew/core
-      - caskroom/cask
     brew_cask_apps:
+      - alfred
       - google-chrome
       - iterm2
       - visual-studio-code
       - virtualbox
       - vagrant
       - copyq
+      - slack
     brew_packages:
       - ansible
       - git
@@ -38,10 +37,6 @@
       - Jinja2
       - selenium
   tasks:
-    - name: Homebrew tap
-      homebrew_tap:
-        name: "{{ brew_taps }}"
-        state: "present"
     - name: Install Homebrew Cask packages
       homebrew_cask:
         name: "{{ item }}"
