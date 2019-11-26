@@ -36,6 +36,7 @@
       - tmux
       - htop
       - ghq
+      - peco
     pip_packages:
       - robotframework
       - Jinja2
@@ -57,3 +58,5 @@
       homebrew:
         name: "{{ brew_packages }}"
         state: present
+    - name: set fish
+      command: chsh -s `which fish`
