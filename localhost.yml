@@ -18,6 +18,8 @@
       - balenaetcher
       - wireshark
       - diffmerge
+      - alacritty
+      - hyper
     brew_packages:
       - ansible
       - git
@@ -39,8 +41,7 @@
       - htop
       - ghq
       - peco
-      - pexpo
-      - rust
+#      - pexpo
     pip_packages:
       - robotframework
       - Jinja2
@@ -62,5 +63,3 @@
       homebrew:
         name: "{{ brew_packages }}"
         state: present
-#    - name: set fish
-#      command: chsh -s `which fish`

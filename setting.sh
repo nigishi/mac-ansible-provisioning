@@ -1,6 +1,6 @@
 #!/bin/bash
 
-ANSIBLE_PATH=~/settings/mac-ansible
+ANSIBLE_PATH=~/mac-ansible
 
 ## command line tools
 xcode-select --install
