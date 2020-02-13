@@ -50,8 +50,9 @@
     - name: Install Homebrew Cask packages
       homebrew_cask:
         name: "{{ brew_cask_apps }}"
-        state: present
-        greedy: yes
+        update_homebrew: yes
+        upgrade_all: yes
+        state: absent
     - name: Install Pip Packages
       pip:
         name: "{{ pip_packages }}"
