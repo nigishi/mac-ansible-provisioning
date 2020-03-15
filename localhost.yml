@@ -20,6 +20,11 @@
       - diffmerge
       - alacritty
       - hyper
+      - docker
+      - tableplus
+      - font-ricty-diminished
+      - font-source-han-code-jp
+      - graphql-playground
     brew_packages:
       - ansible
       - git
@@ -41,6 +46,16 @@
       - htop
       - ghq
       - peco
+      - pandoc
+      - bat
+      - github/gh/gh
+      - tig
+      - lazygit
+      - procs
+      - ripgrep
+      - fd
+      - exa
+      - lazydocker
 #      - pexpo
     pip_packages:
       - robotframework
@@ -52,11 +67,11 @@
         name: "{{ brew_cask_apps }}"
         update_homebrew: yes
         upgrade_all: yes
-        state: absent
-    - name: Install Pip Packages
-      pip:
-        name: "{{ pip_packages }}"
-        executable: pip3
+        state: present
+#    - name: Install Pip Packages
+#      pip:
+#        name: "{{ pip_packages }}"
+#        executable: pip3
     - name: Update Homebrew
       homebrew:
         update_homebrew: yes    
