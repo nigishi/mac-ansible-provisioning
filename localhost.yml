@@ -22,8 +22,6 @@
       - hyper
       - docker
       - tableplus
-      - font-ricty-diminished
-      - font-source-han-code-jp
       - graphql-playground
     brew_packages:
       - ansible
@@ -62,20 +60,22 @@
       - Jinja2
       - selenium
   tasks:
-    - name: Install Homebrew Cask packages
+    - name: Update Homebrew
+      homebrew:
+        update_homebrew: yes    
+    - name: Update Homebrew cask
       homebrew_cask:
         name: "{{ brew_cask_apps }}"
         update_homebrew: yes
-        upgrade_all: yes
+    - name: Install Homebrew Packages
+      homebrew:
+        name: "{{ brew_packages }}"
+        state: present
+    - name: Install Homebrew Cask packages
+      homebrew_cask:
+        name: "{{ brew_cask_apps }}"
         state: present
 #    - name: Install Pip Packages
 #      pip:
 #        name: "{{ pip_packages }}"
 #        executable: pip3
-    - name: Update Homebrew
-      homebrew:
-        update_homebrew: yes    
-    - name: Install Homebrew Packages
-      homebrew:
-        name: "{{ brew_packages }}"
-        state: present
