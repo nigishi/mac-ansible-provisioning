@@ -63,10 +63,10 @@
     - name: Update Homebrew
       homebrew:
         update_homebrew: yes    
-    - name: Update Homebrew cask
-      homebrew_cask:
-        name: "{{ brew_cask_apps }}"
-        update_homebrew: yes
+#    - name: Update Homebrew cask
+#      homebrew_cask:
+#        name: "{{ brew_cask_apps }}"
+#        update_homebrew: yes
     - name: Install Homebrew Packages
       homebrew:
         name: "{{ brew_packages }}"
@@ -74,6 +74,8 @@
     - name: Install Homebrew Cask packages
       homebrew_cask:
         name: "{{ brew_cask_apps }}"
+        accept_external_apps: true
+        greedy: true
         state: present
 #    - name: Install Pip Packages
 #      pip:

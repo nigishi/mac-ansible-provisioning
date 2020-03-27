@@ -1,3 +1,3 @@
 #!/bin/bash
 
-ansible-playbook -i inventory localhost.yml
+ansible-playbook -i inventory localhost.yml -vvv
