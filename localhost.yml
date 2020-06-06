@@ -54,6 +54,7 @@
       - fd
       - exa
       - lazydocker
+      - pyenv
     pip_packages:
       - robotframework
       - Jinja2
