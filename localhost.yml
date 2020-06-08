@@ -55,6 +55,8 @@
       - exa
       - lazydocker
       - pyenv
+      - ubuntu/microk8s/microk8s
+      - deno
     pip_packages:
       - robotframework
       - Jinja2
