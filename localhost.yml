@@ -24,6 +24,7 @@
 #      - graphql-playground
       - snappy
       - maccy
+      - notion
     brew_packages:
       - ansible
       - git
