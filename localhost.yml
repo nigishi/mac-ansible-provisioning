@@ -11,17 +11,19 @@
       - virtualbox
       - vagrant
       - karabiner-elements
-      - clipy
-      - boostnote
+#      - clipy
+#      - boostnote
       - bettertouchtool
       - balenaetcher
       - wireshark
       - diffmerge
-      - alacritty
-      - hyper
+#      - alacritty
+#      - hyper
       - docker
-      - tableplus
-      - graphql-playground
+#      - tableplus
+#      - graphql-playground
+      - snappy
+      - maccy
     brew_packages:
       - ansible
       - git
