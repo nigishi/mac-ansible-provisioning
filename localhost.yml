@@ -60,6 +60,7 @@
       - deno
       - haskell-stack
       - graphviz
+      - awscli
     pip_packages:
       - robotframework
       - Jinja2
