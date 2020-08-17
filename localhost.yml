@@ -22,7 +22,6 @@
       - docker
 #      - tableplus
 #      - graphql-playground
-      - snappy
       - maccy
       - notion
     brew_packages:

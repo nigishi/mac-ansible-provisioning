@@ -1998,7 +1998,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/mac-ansible-provisioning</string>
+	<string>~/logs</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{799, 448}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -2045,7 +2045,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>320 321 799 448 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1440 900 0 0 1440 877 </string>
+	<string>0 0 1440 900 0 0 1440 900 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -2873,6 +2873,8 @@
 				<key>Red Component</key>
 				<real>0.95708823204040527</real>
 			</dict>
+			<key>Automatically Log</key>
+			<true/>
 			<key>BM Growl</key>
 			<true/>
 			<key>Background Color</key>
@@ -3315,6 +3317,8 @@
 				<key>Red Component</key>
 				<real>0.0</real>
 			</dict>
+			<key>Log Directory</key>
+			<string>/Users/yamamoto/logs</string>
 			<key>Mouse Reporting</key>
 			<true/>
 			<key>Name</key>
@@ -3327,6 +3331,8 @@
 			<string>RobotoMonoForPowerline-Regular 11</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
+			<key>Plain Text Logging</key>
+			<true/>
 			<key>Prompt Before Closing 2</key>
 			<false/>
 			<key>Right Option Key Sends</key>
@@ -3408,10 +3414,12 @@
 		<key>topLeft</key>
 		<string>{449, 642}</string>
 	</dict>
+	<key>NoSyncHaveUsedCopyMode</key>
+	<true/>
 	<key>NoSyncInstallationId</key>
 	<string>CB3975DD-246D-43DE-A419-BF2195FB96D3</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>6</integer>
+	<integer>16</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
