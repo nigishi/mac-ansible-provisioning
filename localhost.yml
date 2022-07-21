@@ -8,7 +8,7 @@
       - google-chrome
       - iterm2
       - visual-studio-code
-      - virtualbox
+#      - virtualbox
       - vagrant
       - karabiner-elements
 #      - clipy

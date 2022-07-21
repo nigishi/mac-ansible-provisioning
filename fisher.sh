@@ -1,6 +1,6 @@
-#!/usr/local/bin/fish
+#!/opt/homebrew/bin/fish
 
-fisher add jethrokuan/z
-fisher add jethrokuan/fzf
-fisher add decors/fish-ghq
+fisher install jethrokuan/z
+fisher install jethrokuan/fzf
+fisher install decors/fish-ghq
 
